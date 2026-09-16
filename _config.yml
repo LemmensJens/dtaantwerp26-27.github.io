@@ -1,1 +1,6 @@
 theme: jekyll-theme-minimal
+title: MA Digital Text Analysis - Bootcamp
+description: Course material for the Python bootcamp of the MA Digital Text Analysis, University of Antwerp
+exclude:
+  - schedule_2627.docx
+  - tools/
