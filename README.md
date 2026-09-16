@@ -4,7 +4,7 @@ The bootcamp is the first, intensive module of the [MA Digital Text Analysis](ht
 
 - **Dates:** Monday 21 September to Friday 9 October 2026
 - **First point of contact:** [Jens Lemmens](mailto:jens.lemmens@uantwerpen.be)
-- **Material:** this repository. Every session is a Jupyter notebook in `notebooks/`, with an exercise notebook in `exercises/questions/` and worked solutions in `exercises/solutions/`.
+- **Material:** this repository. Every session is a Jupyter notebook in `notebooks/`, with an exercise notebook in `exercises/questions/` and worked solutions in `exercises/solutions/`. The `data/` folder holds the text files the notebooks work with. The `tools/` folder contains scripts for the technical maintenance of the material; you can ignore it.
 
 Contents of this page:
 
@@ -171,6 +171,6 @@ If you are stuck, ask the assistant during the session, come to a troubleshootin
 
 **Tutors 2026-2027:** Luna De Bruyne, Victor De Marez, Pieter Fivez, Mike Kestemont, Jens Lemmens, Febe Thonissen, Jens Van Nooten, Caroline Vandyck, Loren Verreyen. All of us can be reached at `firstname.lastname@uantwerpen.be`.
 
-**Licence:** this material is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): you may share and adapt it for non-commercial purposes, with attribution. The texts in `data/` come from [Project Gutenberg](https://www.gutenberg.org/) and are in the public domain; the other data files are described in `data/README.md`.
+**Licence:** this material is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): you may share and adapt it for non-commercial purposes, with attribution. The texts in `data/` come from [Project Gutenberg](https://www.gutenberg.org/) and are in the public domain; the tabular data files are open data (NYC Open Data, Ville de Montréal, and the Titanic passenger list).
 
 **Credits:** the notebooks have been developed and revised by the tutors of the MA Digital Text Analysis over many years. Their solutions, mistakes and jokes are theirs; the typos are ours.

@@ -21,5 +21,6 @@ measures that legally restrict others from doing anything the license permits.
 The full license text is available at:
 https://creativecommons.org/licenses/by-nc/4.0/legalcode
 
-Third-party material in the data/ folder (e.g. Project Gutenberg texts) is
-subject to its own terms; see data/README.md.
+The texts in the data/ folder come from Project Gutenberg and are in the
+public domain; the tabular data files are open data (NYC Open Data, Ville de
+Montreal, and the Titanic passenger list).
