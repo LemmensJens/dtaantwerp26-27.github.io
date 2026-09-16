@@ -4,6 +4,11 @@ Usage (from the repository root):
 
     python tools/check_notebooks.py                 # all notebooks
     python tools/check_notebooks.py path/to/nb.ipynb [more.ipynb ...]
+    python tools/check_notebooks.py --save exercises/solutions/06_SOL_*.ipynb
+
+With --save, the executed notebook is written back with its outputs (skipped
+cells get empty outputs). Use this for the solution notebooks, which are
+committed with outputs; teaching and exercise notebooks are committed without.
 
 Every notebook is run from top to bottom in a fresh kernel, with its own folder
 as the working directory (so relative paths such as ../data/alice.txt behave as
@@ -22,6 +27,7 @@ used in a pre-push check.
 """
 
 import os
+import re
 import sys
 import glob
 import shutil
@@ -36,6 +42,7 @@ from config import NOTEBOOK_DIRS, TAG_RAISES, TAG_INPUT, TAG_SKIP  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TIMEOUT = 300  # seconds per cell
+SCHEDULE_WORDS = re.compile(r"\b(this (morning|afternoon)|(next|last) week|on (Mon|Tues|Wednes|Thurs|Fri)day|tomorrow|yesterday)\b", re.I)
 
 
 def snapshot(folder):
@@ -48,18 +55,20 @@ def snapshot(folder):
     return seen
 
 
-def check(path):
+def check(path, save=False):
     nb = nbformat.read(path, as_version=4)
     folder = os.path.dirname(os.path.abspath(path))
 
     # Replace the source of cells we must not run by a no-op, remembering what we did.
-    skipped, expected_errors = [], set()
+    skipped, expected_errors, sources = [], set(), {}
     for i, cell in enumerate(nb.cells):
         if cell.cell_type != "code":
             continue
         tags = set(cell.get("metadata", {}).get("tags", []))
         if tags & {TAG_INPUT, TAG_SKIP}:
+            sources[i] = cell.source
             cell.source = ""
+            cell.outputs = []
             skipped.append(i)
         elif TAG_RAISES in tags:
             expected_errors.add(i)
@@ -92,17 +101,34 @@ def check(path):
             text = "".join(o["text"]).strip().split("\n")[0][:160]
             problems.append(f"cell {i}: warning: {text} | {first_line}")
 
+    # Style: no schedule-relative references outside the generated header cell.
+    for i, cell in enumerate(nb.cells[1:], start=1):
+        if cell.cell_type != "markdown":
+            continue
+        m = SCHEDULE_WORDS.search(cell.source)
+        if m:
+            problems.append(f"cell {i}: schedule-relative phrase {m.group(0)!r}; refer to sessions by topic instead")
+
+    if save:
+        for i, src in sources.items():
+            nb.cells[i].source = src
+            nb.cells[i].outputs = []
+            nb.cells[i].execution_count = None
+        nbformat.write(nb, path)
+
     # Remove anything the notebook wrote, restore anything it modified in data/ (best effort).
     for folder_, old in ((folder, before), (os.path.join(ROOT, "data"), before_data)):
         for p, mtime in snapshot(folder_).items():
             if p not in old:
                 os.remove(p)
-            elif old[p] != mtime:
+            elif old[p] != mtime and os.path.abspath(p) != os.path.abspath(path):
                 problems.append(f"modified an existing file: {os.path.relpath(p, ROOT)}")
     return problems, skipped
 
 
 def main(argv):
+    save = "--save" in argv
+    argv = [a for a in argv if a != "--save"]
     if argv:
         paths = argv
     else:
@@ -111,10 +137,10 @@ def main(argv):
             paths += sorted(glob.glob(os.path.join(ROOT, d, "*.ipynb")))
     total = 0
     for path in paths:
-        problems, skipped = check(path)
+        problems, skipped = check(path, save=save)
         total += len(problems)
         rel = os.path.relpath(path, ROOT)
-        status = "ok" if not problems else f"{len(problems)} problem(s)"
+        status = ("ok" if not problems else f"{len(problems)} problem(s)") + (", saved with outputs" if save else "")
         extra = f", {len(skipped)} cell(s) skipped" if skipped else ""
         print(f"{rel}: {status}{extra}")
         for p in problems:
