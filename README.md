@@ -14,7 +14,8 @@ Contents of this page:
 4. [Google Colab (and its limits)](#4-google-colab-and-its-limits)
 5. [Exercises and solutions](#5-exercises-and-solutions)
 6. [When something goes wrong](#6-when-something-goes-wrong)
-7. [Tutors, licence, credits](#7-tutors-licence-credits)
+7. [The exam](#7-the-exam)
+8. [Tutors, licence, credits](#8-tutors-licence-credits)
 
 ## 1. Timetable
 
@@ -129,7 +130,7 @@ Things you will do all the time:
 Behind the notebook runs a Python process called the **kernel**. It remembers every variable you define, in the order in which you ran the cells, not in the order in which they appear on the page. Two consequences:
 
 - If a cell says `NameError: name 'text' is not defined`, you probably skipped the cell that defines `text`. Run that one first.
-- To make sure your notebook works from top to bottom (which is what we ask at the exam), use the menu **Kernel > Restart Kernel and Run All Cells**. This forgets everything and re-runs the whole notebook in order.
+- To make sure your notebook works from top to bottom (which is what we expect at the exam), use the menu **Kernel > Restart Kernel and Run All Cells**. This forgets everything and re-runs the whole notebook in order.
 
 If a cell runs forever (an infinite loop, or `input()` waiting for you), press the **stop** button or choose **Kernel > Interrupt**.
 
@@ -141,7 +142,7 @@ Every notebook in the timetable has a **colab** link that opens it in [Google Co
 - Colab does not see the files on your computer or the `data/` folder of this repository. Notebooks that read files therefore start with a cell marked *"Run this cell only on Google Colab"*, which downloads the material. Run it first; it does no harm on your own computer either.
 - Your changes are **not** saved automatically. To keep your work, use *File > Save a copy in Drive* or *File > Download > Download .ipynb*. If you just close the tab, your work is gone.
 - A Colab session stops after a period of inactivity and all variables are lost; you then have to re-run the notebook.
-- **At the exam you work on your own computer, in Jupyter, without Colab.** Practise that way from the start.
+- **At the exam you work in a plain Jupyter environment on a university computer, without internet, Colab or assistants** (see [section 7](#7-the-exam)). Practise that way from the start.
 
 ## 5. Exercises and solutions
 
@@ -169,7 +170,17 @@ Errors are a normal part of programming; the notebooks will teach you how to rea
 
 If you are stuck, ask the assistant during the session, come to a troubleshooting session, or email [Jens Lemmens](mailto:jens.lemmens@uantwerpen.be).
 
-## 7. Tutors, licence, credits
+## 7. The exam
+
+The bootcamp is assessed with a **practical exam**: you get a notebook with a handful of programming tasks (functions and loops, text processing, dictionaries and frequencies, regular expressions, a `pandas` question on a small dataset) and three hours to solve them. What you should know about it:
+
+- **It takes place in a computer classroom, on the university's computers, in a sandboxed environment without internet access.** There is no Colab, no documentation website, no ChatGPT or Copilot, and no course notebooks: it is a closed-book exam. Everything you need is what you learned in the bootcamp, and Python's built-in `help()`.
+- The tasks ask for skills that were taught in the bootcamp, nothing else. Keep it simple and familiar.
+- **Partial answers earn points.** Show the steps you do understand, comment your code, and use `print()` to explore and debug. In Python there is no `NoCodeError`, so don't stare at empty cells.
+- At the end of the bootcamp we share **one example exam** of a previous year, with solutions, so that you can practise under realistic conditions.
+- The first sitting is in the January exam period, the resit in August. **Try to pass the exam at the first opportunity, and certainly in your first year.** Programming skills fade quickly when you stop practising, and every year we see students who postponed the exam struggle more with it than they would have in January, even at the August resit. The other modules of the programme also assume that the bootcamp material is fresh.
+
+## 8. Tutors, licence, credits
 
 **Tutors 2026-2027:** Luna De Bruyne, Victor De Marez, Pieter Fivez, Mike Kestemont, Jens Lemmens, Febe Thonissen, Jens Van Nooten, Caroline Vandyck, Loren Verreyen. All of us can be reached at `firstname.lastname@uantwerpen.be`.
 
