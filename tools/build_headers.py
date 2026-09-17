@@ -86,6 +86,8 @@ def header_text(path, sessions):
         if ex_nb:
             extra = f" (solutions: {link(sol_nb)})" if sol_nb else ""
             lines += [f"**Exercises:** {link(ex_nb)}{extra}  "]
+        elif sol_nb:
+            lines += [f"**Solution:** {link(sol_nb)} (look at it after the session, not before)  "]
     elif folder == "exercises/questions":
         lines += [f"# Exercises: {s['name']}", ""]
         lines += [f"These exercises go with the session {link(session_nb)} ({s['date']}).  "]
@@ -93,8 +95,11 @@ def header_text(path, sessions):
             lines += [f"Solutions: {link(sol_nb)}  "]
     else:
         lines += [f"# Solutions: {s['name']}", ""]
-        lines += [f"Worked solutions to the exercises in {link(ex_nb)}, "
-                  f"which go with the session {link(session_nb)}.  "]
+        if ex_nb:
+            lines += [f"Worked solutions to the exercises in {link(ex_nb)}, "
+                      f"which go with the session {link(session_nb)}.  "]
+        else:
+            lines += [f"A worked solution to the project of the session {link(session_nb)}.  "]
     lines += ["", f"[![Open in Colab]({BADGE})]({COLAB_URL}/{rel})"]
     return "\n".join(lines)
 
