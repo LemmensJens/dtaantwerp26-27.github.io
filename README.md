@@ -191,4 +191,4 @@ What you should know about the practical exam:
 
 **Licence:** this material is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): you may share and adapt it for non-commercial purposes, with attribution. The texts in `data/` come from [Project Gutenberg](https://www.gutenberg.org/) and are in the public domain; the tabular data files are open data (NYC Open Data, Ville de Montréal, and the Titanic passenger list).
 
-**Credits:** the notebooks have been developed and revised over many years by the past and present tutors of the MA Digital Text Analysis. The 2026-27 edition was streamlined and repaired by Mike Kestemont; any mistakes that remain are his.
+**Credits:** the notebooks have been developed and revised over many years by the past and present tutors of the MA Digital Text Analysis. The 2026-27 edition was streamlined and repaired by this year's teaching team; any mistakes that remain are ours.
