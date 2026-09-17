@@ -11,9 +11,10 @@ __pycache__/
 *.pyc
 
 # Files that the notebooks write while you work through them
-notebooks/test.txt
-notebooks/*_starring_*.txt
+notebooks/*.txt
+notebooks/*.json
 exercises/**/*.txt
+exercises/**/*.json
 
 # Local scratch space
 mine/
