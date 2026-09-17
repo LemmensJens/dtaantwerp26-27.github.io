@@ -189,6 +189,6 @@ What you should know about the practical exam:
 
 **Tutors 2026-2027:** Luna De Bruyne, Victor De Marez, Pieter Fivez, Mike Kestemont, Jens Lemmens, Febe Thonissen, Jens Van Nooten, Caroline Vandyck, Loren Verreyen. All of us can be reached at `firstname.lastname@uantwerpen.be`.
 
-**Licence:** this material is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): you may share and adapt it for non-commercial purposes, with attribution. The texts in `data/` come from [Project Gutenberg](https://www.gutenberg.org/) and are in the public domain; the tabular data files are open data (NYC Open Data, Ville de Montréal, and the Titanic passenger list).
+**Licence:** this material is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): you may share and adapt it for non-commercial purposes, with attribution. The texts in `data/` come from [Project Gutenberg](https://www.gutenberg.org/) and are in the public domain; the tabular data files are open data (Ville de Montréal bicycle counts, and the Titanic passenger list).
 
 **Credits:** the notebooks have been developed and revised over many years by the past and present tutors of the MA Digital Text Analysis. The 2026-27 edition was streamlined and repaired by this year's teaching team; any mistakes that remain are ours.
