@@ -14,9 +14,11 @@ __pycache__/
 notebooks/*.txt
 notebooks/*.json
 notebooks/*.csv
+notebooks/output/
 exercises/**/*.txt
 exercises/**/*.json
 exercises/**/*.csv
+exercises/**/output/
 
 # Local scratch space
 mine/

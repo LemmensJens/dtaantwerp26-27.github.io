@@ -19,7 +19,7 @@ they do for a student). Cells are handled according to their tags:
     skip-check          skipped
 
 Any other cell that raises, or that prints a Warning to stderr, is reported.
-Files that a notebook creates while running are deleted afterwards, and the
+Files and folders that a notebook creates while running are deleted afterwards, and the
 notebooks themselves are never modified.
 
 Exit status is 1 when at least one problem was found, so the script can be
@@ -74,6 +74,7 @@ def check(path, save=False):
             expected_errors.add(i)
 
     before = snapshot(folder)
+    before_dirs = {d for d, _, _ in os.walk(folder)}
     before_data = snapshot(os.path.join(ROOT, "data"))
     client = NotebookClient(nb, timeout=TIMEOUT, kernel_name="python3",
                             allow_errors=True, resources={"metadata": {"path": folder}})
@@ -123,6 +124,9 @@ def check(path, save=False):
                 os.remove(p)
             elif old[p] != mtime and os.path.abspath(p) != os.path.abspath(path):
                 problems.append(f"modified an existing file: {os.path.relpath(p, ROOT)}")
+    for d, _, _ in sorted(os.walk(folder), reverse=True):
+        if d not in before_dirs and not os.listdir(d):
+            os.rmdir(d)
     return problems, skipped
 
 
