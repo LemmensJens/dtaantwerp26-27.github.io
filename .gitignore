@@ -13,8 +13,10 @@ __pycache__/
 # Files that the notebooks write while you work through them
 notebooks/*.txt
 notebooks/*.json
+notebooks/*.csv
 exercises/**/*.txt
 exercises/**/*.json
+exercises/**/*.csv
 
 # Local scratch space
 mine/
