@@ -172,7 +172,12 @@ If you are stuck, ask the assistant during the session, come to a troubleshootin
 
 ## 7. The exam
 
-The bootcamp is assessed with a **practical exam**: you get a notebook with a handful of programming tasks (functions and loops, text processing, dictionaries and frequencies, regular expressions, a `pandas` question on a small dataset) and three hours to solve them. What you should know about it:
+The bootcamp is marked out of 20, in two parts:
+
+- A short **written test on paper** (4 of the 20 points) in the week after the bootcamp, on Monday 12 or Tuesday 13 October (the exact date will be announced during the bootcamp). It covers the material of the bootcamp; the format is explained during the bootcamp.
+- A **practical exam** (16 of the 20 points): you get a notebook with a handful of programming tasks (functions and loops, text processing, dictionaries and frequencies, regular expressions, a `pandas` question on a small dataset) and three hours to solve them.
+
+What you should know about the practical exam:
 
 - **It takes place in a computer classroom, on the university's computers, in a sandboxed environment without internet access.** There is no Colab, no documentation website, no ChatGPT or Copilot, and no course notebooks: it is a closed-book exam. Everything you need is what you learned in the bootcamp, and Python's built-in `help()`.
 - The tasks ask for skills that were taught in the bootcamp, nothing else. Keep it simple and familiar.
@@ -186,4 +191,4 @@ The bootcamp is assessed with a **practical exam**: you get a notebook with a ha
 
 **Licence:** this material is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): you may share and adapt it for non-commercial purposes, with attribution. The texts in `data/` come from [Project Gutenberg](https://www.gutenberg.org/) and are in the public domain; the tabular data files are open data (NYC Open Data, Ville de Montréal, and the Titanic passenger list).
 
-**Credits:** the notebooks have been developed and revised by the tutors of the MA Digital Text Analysis over many years. Their solutions, mistakes and jokes are theirs; the typos are ours.
+**Credits:** the notebooks have been developed and revised over many years by the past and present tutors of the MA Digital Text Analysis. The 2026-27 edition was streamlined and repaired by Mike Kestemont; any mistakes that remain are his.
