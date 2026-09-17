@@ -99,7 +99,7 @@ def header_text(path, sessions):
             lines += [f"Worked solutions to the exercises in {link(ex_nb)}, "
                       f"which go with the session {link(session_nb)}.  "]
         else:
-            lines += [f"A worked solution to the project of the session {link(session_nb)}.  "]
+            lines += [f"Worked solutions for the session {link(session_nb)}.  "]
     lines += ["", f"[![Open in Colab]({BADGE})]({COLAB_URL}/{rel})"]
     return "\n".join(lines)
 
