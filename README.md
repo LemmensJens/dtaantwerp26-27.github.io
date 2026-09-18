@@ -91,6 +91,8 @@ Exercise notebooks: [`exercises/questions/`](https://github.com/mikekestemont/dt
 
 Please do this **before Tuesday 22 September**. It takes about half an hour, most of which is waiting for a download. If anything fails, that is fine: bring your laptop to the first session and we will sort it out together.
 
+**Your laptop.** Bring your own laptop to every session, fully charged (not every room has enough sockets), and make sure you have **full administrator rights** on it: installing Anaconda needs them, and a laptop managed by an employer or school that blocks installations will get you stuck on day one. A Chromebook is not advised: Anaconda does not install on it without workarounds, and you would be limited to Colab, which is not what you will use at the exam. Windows, macOS and Linux are all fine.
+
 ### 2.1 Install Anaconda
 
 We use the **Anaconda Distribution**: one installer that gives you Python, Jupyter and all the libraries we need (`pandas`, `matplotlib`, ...). It works the same way on Windows, macOS and Linux and does not interfere with anything else on your computer.
