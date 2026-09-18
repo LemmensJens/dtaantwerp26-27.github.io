@@ -1,8 +1,9 @@
 """Settings shared by the scripts in tools/.
 
 Change OWNER/REPO/BRANCH here when the material moves to another repository
-(for instance from a tutor's fork to the students' repository): the README
-links and the notebook headers are rebuilt from these values.
+(for instance from a tutor's fork to the students' repository): the notebook
+headers are rebuilt from these values by build_headers.py. The links in
+README.md are hand-written; update them with a search-and-replace.
 """
 
 OWNER = "mikekestemont"

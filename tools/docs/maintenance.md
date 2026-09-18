@@ -6,7 +6,7 @@ repository root with the Python that comes with Anaconda (they need
 
 | Script | What it does |
 | --- | --- |
-| `config.py` | Owner, repository and branch used in all generated links. Edit this when the material moves to another repository. |
+| `config.py` | Owner, repository and branch used in the generated notebook headers. Edit this when the material moves to another repository, then run `build_headers.py`. The links in `README.md` are not generated: replace the old `owner/repo` there with a search-and-replace. |
 | `build_headers.py` | Rewrites the header cell of every notebook (title, Colab badge, and a "Colab only" data cell where the notebook reads files) from the notebook's own title. Run after adding or renaming a notebook. |
 | `check_notebooks.py` | Executes every notebook from top to bottom in a fresh kernel and reports every cell that fails or warns, except cells tagged `raises-on-purpose`, `needs-input` or `skip-check`. Files written by the notebooks are removed afterwards. Run before every push. |
 | `check_links.py` | Collects every URL in the notebooks and Markdown files and reports the ones that do not answer with HTTP 200. |
