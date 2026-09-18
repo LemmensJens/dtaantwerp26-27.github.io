@@ -38,7 +38,7 @@ Contents of this page:
 
 Morning sessions run from 10:30 to 12:30, afternoon sessions from 14:00 to 16:00. Every session has a tutor and an assistant who walks around and helps. Sessions marked *Troubleshooting* are optional: come by with your own questions, or finish the exercises of the morning.
 
-For each notebook there are three links: **view** it on GitHub, **download** the `.ipynb` file to run it on your own computer, or **open** it in Google Colab (see [section 4](#4-google-colab-and-its-limits)). Notebooks are sometimes updated the evening before a session, so download the notebook you need at the start of each session.
+For each notebook there are three links: **view** it on GitHub, **download** the `.ipynb` file to run it on your own computer, or **open** it in Google Colab (see [section 4](#4-google-colab-and-its-limits)). Notebooks are sometimes updated shortly before a session; your tutor will tell you if that is the case, and only then do you need to download the notebook again (see [section 2.2](#22-get-the-course-material)).
 
 Notebook names follow one pattern, for example `06_W2_Mon_Input_Output_Files.ipynb`: a two-digit number that fixes the order of the sessions (`06`), the week (`W2`) and weekday (`Mon`) on which the session is taught, and the topic. The matching exercise notebook has the same number with the prefix `EX` (`06_EX_Input_Output_Files.ipynb`), its solutions the prefix `SOL` (`06_SOL_Input_Output_Files.ipynb`).
 
@@ -115,7 +115,7 @@ The material lives in this repository (a GitHub repository is simply a folder th
 2. Unzip the file and move the resulting folder to a place where you will find it again, for instance `Documents/bootcamp`.
 3. Do **not** rename or move the folders inside it. The notebooks in `notebooks/` expect the data files to be in the neighbouring `data/` folder.
 
-The notebooks are updated during the bootcamp. At the start of each session, download the notebook of that session from the timetable above (the **download** link) and save it into your `notebooks/` folder, replacing the old copy. Some browsers show the file as text instead of downloading it; in that case right-click the link and choose *Save link as...*, and make sure the file name ends in `.ipynb`.
+The ZIP contains all the material, so normally this is all you need to do. Occasionally a tutor makes last-minute changes to a notebook; **your tutor will tell you** at the start of the session if that happened. In that case (and only then), download the notebook of that session from the timetable above (the **download** link) and save it into your `notebooks/` folder, replacing the old copy. Some browsers show the file as text instead of downloading it; in that case right-click the link and choose *Save link as...*, and make sure the file name ends in `.ipynb`.
 
 ### 2.3 Start Jupyter and open a notebook
 
