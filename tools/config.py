@@ -6,7 +6,7 @@ headers are rebuilt from these values by build_headers.py. The links in
 README.md are hand-written; update them with a search-and-replace.
 """
 
-OWNER = "mikekestemont"
+OWNER = "LemmensJens"
 REPO = "dtaantwerp26-27.github.io"
 BRANCH = "DTA_Bootcamp_2026_students"
 
