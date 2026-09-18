@@ -67,7 +67,7 @@ Notebook names follow one pattern, for example `06_W2_Mon_Input_Output_Files.ipy
 | Wed 07/10 | 10:30 | S.R.118 | `pandas`: `13` [view](https://github.com/mikekestemont/dtaantwerp26-27.github.io/blob/DTA_Bootcamp_2026_students/notebooks/13_W3_Wed_Pandas.ipynb) / [download](https://raw.githubusercontent.com/mikekestemont/dtaantwerp26-27.github.io/DTA_Bootcamp_2026_students/notebooks/13_W3_Wed_Pandas.ipynb) / [colab](https://colab.research.google.com/github/mikekestemont/dtaantwerp26-27.github.io/blob/DTA_Bootcamp_2026_students/notebooks/13_W3_Wed_Pandas.ipynb) | Loren Verreyen / Caroline Vandyck |
 | Wed 07/10 | 14:00 | S.C.102 | Object orientation: `14` [view](https://github.com/mikekestemont/dtaantwerp26-27.github.io/blob/DTA_Bootcamp_2026_students/notebooks/14_W3_Wed_Object_Orientation.ipynb) / [download](https://raw.githubusercontent.com/mikekestemont/dtaantwerp26-27.github.io/DTA_Bootcamp_2026_students/notebooks/14_W3_Wed_Object_Orientation.ipynb) / [colab](https://colab.research.google.com/github/mikekestemont/dtaantwerp26-27.github.io/blob/DTA_Bootcamp_2026_students/notebooks/14_W3_Wed_Object_Orientation.ipynb) | Victor De Marez / TBD |
 | Thu 08/10 | 10:30 | S.D.328 | Exercises: `pandas` (`13_EX`) | Loren Verreyen / Caroline Vandyck |
-| Thu 08/10 | 14:00 | S.D.328 | Working with large language models: `15` (notebook to follow) | Pieter Fivez (tentative) |
+| Thu 08/10 | 14:00 | S.D.328 | Working with large language models (slides, no notebook) | Pieter Fivez (tentative) |
 | Fri 09/10 | 10:30 | S.D.226 | Information session: thesis, internship, practicum | Jens Lemmens and the thesis supervisors |
 | Fri 09/10 | 14:00 | S.D.226 | Troubleshooting (optional) | Jens Lemmens |
 
