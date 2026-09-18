@@ -6,7 +6,7 @@ The bootcamp is the first, intensive module of the [MA Digital Text Analysis](ht
 - **First point of contact:** [Jens Lemmens](mailto:jens.lemmens@uantwerpen.be)
 - **Material:** this repository. Every session is a Jupyter notebook in `notebooks/`, with an exercise notebook in `exercises/questions/` and worked solutions in `exercises/solutions/`. The `data/` folder holds the text files the notebooks work with. The `tools/` folder contains scripts for the technical maintenance of the material; you can ignore it.
 
-**Quick links to the session notebooks** (open one on GitHub at the start of a class; download and Colab links are in the timetable below):
+**Quick links to the session notebooks:**
 
 - `01` [Course overview and getting started](https://github.com/mikekestemont/dtaantwerp26-27.github.io/blob/DTA_Bootcamp_2026_students/notebooks/01_W1_Tue_Ma_DTA_Course_Overview.ipynb)
 - `02` [Python and variables](https://github.com/mikekestemont/dtaantwerp26-27.github.io/blob/DTA_Bootcamp_2026_students/notebooks/02_W1_Tue_Python_and_Variables.ipynb)
